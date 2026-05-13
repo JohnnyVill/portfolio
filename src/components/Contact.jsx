@@ -44,12 +44,27 @@ export default function Contact() {
 
     setStatus('loading');
 
-    // Simulate form submission (console.log instead of backend)
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log('Contact form submitted:', form);
-      setStatus('success');
-      setForm(initialForm);
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'e73706bb-5771-4a91-85a9-53ca15fd1b78',
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          subject: `New contact from ${form.name} via portfolio`,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus('success');
+        setForm(initialForm);
+      } else {
+        setStatus('error');
+      }
     } catch {
       setStatus('error');
     }
