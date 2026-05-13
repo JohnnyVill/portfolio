@@ -2,12 +2,11 @@ export const personalInfo = {
   name: "Jonathan",
   title: "Frontend Developer / Software Engineer",
   bio: "Passionate developer creating beautiful, performant web experiences with modern technologies. I love turning complex problems into simple, elegant solutions.",
-  email: "your.email@example.com",
+  email: "jonathanvillanueva171@gmail.com",
   resumeUrl: "#",
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
+    github: "https://github.com/JohnnyVill",
+    linkedin: "https://linkedin.com/in/j-villanueva/",
   },
   aboutMe: [
     "I'm a frontend developer with a passion for creating intuitive and performant web applications. I believe great software starts with understanding the people who use it.",
@@ -17,8 +16,8 @@ export const personalInfo = {
   education: [
     {
       degree: "B.S. Computer Science",
-      school: "University Name",
-      year: "2020 – 2024",
+      school: "University of the Pacific",
+      year: "2023 – 2025",
     },
   ],
   skills: {
@@ -31,7 +30,7 @@ export const personalInfo = {
       "CSS3",
       "Tailwind CSS",
     ],
-    backend: ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
+    backend: ["Node.js", "Express", "Python", "REST APIs"],
     tools: ["Git", "GitHub", "VS Code", "Figma", "Docker", "Vite"],
   },
   projects: [

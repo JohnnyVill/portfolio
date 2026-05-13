@@ -37,15 +37,6 @@ export default function Footer() {
             >
               <Briefcase size={18} />
             </a>
-            <a
-              href={personalInfo.social.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
-              aria-label="Twitter"
-            >
-              <Globe size={18} />
-            </a>
 
             {/* Back to top */}
             <button

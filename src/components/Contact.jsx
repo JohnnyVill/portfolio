@@ -100,7 +100,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                   <MapPin size={20} className="text-primary-500 shrink-0" />
-                  <span>[Your Location]</span>
+                  <span>Stockton CA</span>
                 </div>
               </div>
             </div>
