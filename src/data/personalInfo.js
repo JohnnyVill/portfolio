@@ -31,7 +31,7 @@ export const personalInfo = {
       "Tailwind CSS",
     ],
     backend: ["Node.js", "Express", "Python", "REST APIs"],
-    tools: ["Git", "GitHub", "VS Code", "Figma", "Docker", "Vite"],
+    tools: ["Git", "GitHub", "VS Code", "Vite"],
   },
   projects: [
     {
