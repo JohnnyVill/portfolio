@@ -37,25 +37,9 @@ export const personalInfo = {
     {
       title: "WatchBuddy",
       description:
-        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL.",      tech: ["Next.js", "TypeScript", "PostgreSQL", "TMDB API", "Tailwind CSS"],
-      liveUrl: "YOUR_DEPLOYED_LINK",
+        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL.",      tech: ["Next.js(React)", "TypeScript", "Upstash Redis", "Neon DB", "PostgreSQL", "TMDB API", "Tailwind CSS"],
+      liveUrl: "https://watchbuddymov.vercel.app/",
       githubUrl: "https://github.com/JohnnyVill/watchBuddy",
-    },
-    {
-      title: "Task Management App",
-      description:
-        "A drag-and-drop task management application with real-time collaboration and deadline tracking.",
-      tech: ["React", "Firebase", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "Real-time weather dashboard with location search, interactive maps, and 7-day forecasts.",
-      tech: ["JavaScript", "OpenWeather API", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
     },
   ],
 };
