@@ -145,14 +145,13 @@ Use these placeholders that I can easily replace:
 ```javascript
 // src/data/personalInfo.js
 export const personalInfo = {
-  name: "[Your Name]",
+  name: "Jonathan Villanueva",
   title: "Frontend Developer / Software Engineer",
   bio: "Passionate developer creating beautiful web experiences...",
-  email: "your.email@example.com",
+  email: "jonathanvillanueva171@gmail.com",
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername"
+    github: "https://github.com/JohnnyVill",
+    linkedin: "https://www.linkedin.com/in/j-villanueva/",
   },
   skills: [
     "React", "JavaScript", "Tailwind CSS", "Git", 
@@ -163,8 +162,8 @@ export const personalInfo = {
       title: "Project 1",
       description: "Description of your first project",
       tech: ["React", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://watchbuddymov.vercel.app/",
+      githubUrl: "https://github.com/JohnnyVill/WatchBuddy"
     }
     // Add more projects
   ]

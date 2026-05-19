@@ -73,21 +73,19 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <a
             href="#home"
             onClick={(e) => {
               e.preventDefault();
               scrollTo('#home');
             }}
-            className="text-xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent"
+            className="text-xl font-bold text-gradient"
           >
             Portfolio
           </a>
 
-          {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <button
@@ -103,7 +101,6 @@ export default function Navbar() {
               </button>
             ))}
 
-            {/* Dark mode toggle */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="ml-2 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -113,7 +110,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile menu button */}
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -132,7 +128,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile navigation */}
         {isOpen && (
           <div className="md:hidden border-t border-gray-200 dark:border-gray-800">
             <div className="px-2 py-3 space-y-1">

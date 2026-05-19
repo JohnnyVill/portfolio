@@ -30,17 +30,16 @@ export const personalInfo = {
       "CSS3",
       "Tailwind CSS",
     ],
-    backend: ["Node.js", "Express", "Python", "REST APIs"],
+    backend: ["Node.js", "Express", "PostgreSQL", "REST APIs"],
     tools: ["Git", "GitHub", "Vite"],
   },
   projects: [
     {
-      title: "E-Commerce Platform",
+      title: "WatchBuddy",
       description:
-        "A full-stack e-commerce platform with cart functionality, user authentication, and Stripe payment integration.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL.",      tech: ["Next.js", "TypeScript", "PostgreSQL", "TMDB API", "Tailwind CSS"],
+      liveUrl: "YOUR_DEPLOYED_LINK",
+      githubUrl: "https://github.com/JohnnyVill/watchBuddy",
     },
     {
       title: "Task Management App",
