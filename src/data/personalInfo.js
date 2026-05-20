@@ -1,17 +1,18 @@
 export const personalInfo = {
   name: "Jonathan",
-  title: "Frontend Developer / Software Engineer",
+  title: "Full Stack Developer / Software Engineer",
   bio: "Passionate developer creating beautiful, performant web experiences with modern technologies. I love turning complex problems into simple, elegant solutions.",
   email: "jonathanvillanueva171@gmail.com",
-  resumeUrl: "#",
+  // resumeUrl: "#",
   social: {
     github: "https://github.com/JohnnyVill",
     linkedin: "https://linkedin.com/in/j-villanueva/",
   },
   aboutMe: [
-    "I'm a frontend developer with a passion for creating intuitive and performant web applications. I believe great software starts with understanding the people who use it.",
-    "With experience in React, JavaScript, and modern CSS frameworks, I focus on building accessible, responsive interfaces that delight users and meet business goals.",
-    "When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and hiking through nature trails.",
+    "I’m a software developer passionate about building full-stack applications that are both functional and user-focused. I enjoy turning ideas into real products, whether that means designing responsive frontends, creating scalable backend systems, or optimizing performance behind the scenes.", 
+    "I enjoy solving technical challenges, learning modern tools, and continuously improving the way I build software. Outside of coding, I’m driven by curiosity and creativity.",
+    "I like building projects that combine practical engineering with experiences people genuinely enjoy using projects that combine practical engineering with experiences people genuinely enjoy using.",
+    "My goal is to grow as an engineer while creating applications that make an impact and reflect thoughtful design."
   ],
   education: [
     {
@@ -37,7 +38,7 @@ export const personalInfo = {
     {
       title: "WatchBuddy",
       description:
-        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL.",      tech: ["Next.js(React)", "TypeScript", "Upstash Redis", "Neon DB", "PostgreSQL", "TMDB API", "Tailwind CSS"],
+        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL.",  tech: ["Next.js(React)", "TypeScript", "Upstash Redis", "Neon DB", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://watchbuddymov.vercel.app/",
       githubUrl: "https://github.com/JohnnyVill/watchBuddy",
     },

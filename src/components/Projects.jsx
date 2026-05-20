@@ -82,7 +82,7 @@ export default function Projects() {
                   <div className="p-8 pt-6">
                     {/* Tech badges */}
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tech.slice(0, 4).map((tech) => (
+                      {project.tech.slice(0, 6).map((tech) => (
                         <span
                           key={tech}
                           className={`text-xs font-medium px-2.5 py-1 rounded-full ${

@@ -85,7 +85,7 @@ export default function Hero() {
               <ExternalLink size={18} />
               View Projects
             </a>
-            <a
+            {/* <a
               href={personalInfo.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -93,7 +93,7 @@ export default function Hero() {
             >
               <FileText size={18} />
               Resume
-            </a>
+            </a> */}
           </div>
 
           {/* Social links */}
