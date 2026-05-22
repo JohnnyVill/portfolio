@@ -38,7 +38,7 @@ export const personalInfo = {
     {
       title: "WatchBuddy",
       description:
-        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL.",  tech: ["Next.js(React)", "TypeScript", "Upstash Redis", "Neon DB", "PostgreSQL", "Tailwind CSS"],
+        "Built a full-stack movie tracking application with authentication, persistent watch history, TMDB API integration, and responsive UI using Next.js, TypeScript, and PostgreSQL. To Signup you can use any username and password. If you don't want to sign up you can use Username: demo Password: 1234 to test the Login features!  ",  tech: ["Next.js(React)", "TypeScript", "Upstash Redis", "Neon DB", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://watchbuddymov.vercel.app/",
       githubUrl: "https://github.com/JohnnyVill/watchBuddy",
     },
