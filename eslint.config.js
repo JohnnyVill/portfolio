@@ -5,7 +5,8 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  // Bundled agent tools are not application source.
+  globalIgnores(['dist', '.agents/**']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [

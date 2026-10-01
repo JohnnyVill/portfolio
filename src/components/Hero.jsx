@@ -1,10 +1,7 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Mail, ExternalLink, FileText, GitBranch, Briefcase } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 import FloatingBlob from './FloatingBlob';
-import CyclingText from './CyclingText';
-
-const cyclingRoles = ['Frontend Developer', 'Software Engineer', 'UI Engineer'];
 
 const socialLinks = [
   { icon: GitBranch, href: personalInfo.social.github, label: 'GitHub' },
@@ -13,6 +10,7 @@ const socialLinks = [
 ];
 
 export default function Hero() {
+  const reduceMotion = useReducedMotion();
   return (
     <section
       id="home"
@@ -59,9 +57,9 @@ export default function Hero() {
             <span className="text-gradient">{personalInfo.name}</span>
           </h1>
 
-          {/* Cycling role title */}
-          <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 font-medium h-9">
-            <CyclingText texts={cyclingRoles} interval={2800} />
+          {/* Professional title */}
+          <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 font-medium">
+            {personalInfo.title}
           </h2>
 
           {/* Bio */}
@@ -69,31 +67,34 @@ export default function Hero() {
             {personalInfo.bio}
           </p>
 
+          <p className="mb-8 text-sm font-medium text-primary-700 dark:text-primary-300">
+            Stockton, CA · Open to full-time and freelance opportunities
+          </p>
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <a
-              href="#contact"
-              className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 inline-flex items-center gap-2"
-            >
-              <Mail size={18} />
-              Get in Touch
-            </a>
-            <a
               href="#projects"
-              className="px-6 py-3 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary-500 hover:text-primary-600 dark:hover:border-primary-500 dark:hover:text-primary-400 inline-flex items-center gap-2"
+              className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 inline-flex items-center gap-2"
             >
               <ExternalLink size={18} />
               View Projects
             </a>
-            {/* <a
+            <a
+              href="#contact"
+              className="px-6 py-3 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary-500 hover:text-primary-600 dark:hover:border-primary-500 dark:hover:text-primary-400 inline-flex items-center gap-2"
+            >
+              <Mail size={18} />
+              Contact
+            </a>
+            <a
               href={personalInfo.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary-500 hover:text-primary-600 dark:hover:border-primary-500 dark:hover:text-primary-400 inline-flex items-center gap-2"
             >
               <FileText size={18} />
-              Resume
-            </a> */}
+              View Résumé
+            </a>
           </div>
 
           {/* Social links */}
@@ -121,7 +122,7 @@ export default function Hero() {
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 8, 0] }}
+            animate={reduceMotion ? {} : { y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           >
             <svg

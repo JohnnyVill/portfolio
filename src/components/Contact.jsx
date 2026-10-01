@@ -95,14 +95,14 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-12">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-12">
           {/* Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.15 }}
-            className="md:col-span-2 space-y-8"
+            className="min-w-0 lg:col-span-2 space-y-8"
           >
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-5">
@@ -113,7 +113,7 @@ export default function Contact() {
                   <Mail size={20} className="text-primary-500 shrink-0" />
                   <a
                     href={`mailto:${personalInfo.email}`}
-                    className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                    className="min-w-0 break-all hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
                     {personalInfo.email}
                   </a>
@@ -142,7 +142,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.25 }}
-            className="md:col-span-3"
+            className="min-w-0 lg:col-span-3"
           >
             {status === 'success' ? (
               <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-2xl p-10 text-center">
